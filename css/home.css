@@ -39,6 +39,7 @@ header .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--primary);
+
 }
 
 header nav ul {
@@ -63,7 +64,7 @@ header nav a.active {
 .hero {
   background: url("../img/home.svg ") no-repeat center center/cover;
   color: var(--light);
-  text-align: center;
+  text-align:center;
   padding: 100px 20px;
   height: 550px;
 }
@@ -119,12 +120,107 @@ header nav a.active {
 
 /* ===== Footer ===== */
 footer {
-  background: var(--dark);
-  color: var(--light);
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
+  background: black;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: sans-serif;
 }
+
+footer > div {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+footer h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 22px;
+  transition: .3s;
+}
+
+footer a:hover {
+  color: #00c6ff;
+}
+
+/* NAV layout */
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: left;
+}
+
+footer nav div {
+  flex: 1 1 220px;
+}
+
+footer nav div h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+footer nav div a {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+footer nav div a:hover {
+  color: #00c6ff;
+}
+
+/* form */
+footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer form input,
+footer form button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+footer form input {
+  background: #fff;
+}
+
+footer form button {
+  background: #00c6ff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+footer form button:hover {
+  background: #0099cc;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  footer nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer nav div {
+    flex: 1 1 100%;
+  }
+}
+
 /*======================*/
 #goBtn{
 padding: 8px 16px;
@@ -136,31 +232,11 @@ cursor: pointer;
 }
 
 #goBttn{
- 
-          
-  
-
- 
 padding: 8px 16px;
 border: none;
 background: #0066cc;
 border-radius:30em ;
 color: white;
 cursor: pointer;
-
-
-
 }
 
-.container-about{
-  display: flex;
-  align-content: space-between;
-  margin-left: 10px;
-  align-items: center;
-  background: #ffffff;
-  color: #222222;
-
-}
-.about-div h4{
-  position: relative;
-}
