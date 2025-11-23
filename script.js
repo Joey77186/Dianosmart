@@ -1,3 +1,4 @@
+// Arabic luanguage button
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("goBtn");
 
@@ -7,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   btn.addEventListener("click", goToPage);
 });
+// English luanguage button
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("goBttn");
 
